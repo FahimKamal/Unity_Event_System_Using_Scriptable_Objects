@@ -178,11 +178,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7303063661197423899}
   - component: {fileID: 7303063661197423896}
-  - component: {fileID: 9098272686889574002}
   - component: {fileID: 5428312065295353004}
+  - component: {fileID: 9098272686889574002}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,25 +256,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9098272686889574002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7303063661197423897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be547f263090ca4884cf4514fa9d500, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 0
-  skinColor: {r: 0.09789959, g: 0.8301887, b: 0.15939835, a: 1}
-  _intEvent: {fileID: 0}
-  sp:
-  - {fileID: 7303063661197423896}
-  - {fileID: 7303063660170406595}
-  - {fileID: 7303063660619069399}
 --- !u!61 &5428312065295353004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -301,3 +282,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.399926, y: 1.4278281}
   m_EdgeRadius: 0
+--- !u!114 &9098272686889574002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303063661197423897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be547f263090ca4884cf4514fa9d500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  skinColor: {r: 0.09789959, g: 0.8301887, b: 0.15939835, a: 1}
+  _intEvent: {fileID: 11400000, guid: 5468ba1c2fe2fad4c8daa71e09db3939, type: 2}
+  dictEvent: {fileID: 11400000, guid: a3b31b66a75fb314eb96f8f47aaf13ae, type: 2}
+  sp:
+  - {fileID: 7303063661197423896}
+  - {fileID: 7303063660170406595}
+  - {fileID: 7303063660619069399}

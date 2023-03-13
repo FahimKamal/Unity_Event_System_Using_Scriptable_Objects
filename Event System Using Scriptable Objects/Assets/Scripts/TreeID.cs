@@ -8,6 +8,7 @@ public class TreeID : MonoBehaviour
     [SerializeField] private Color skinColor;
 
     [SerializeField] private IntEvent _intEvent;
+    [SerializeField] private DictEvent dictEvent;
     
     [SerializeField]
     private List<SpriteRenderer> sp;

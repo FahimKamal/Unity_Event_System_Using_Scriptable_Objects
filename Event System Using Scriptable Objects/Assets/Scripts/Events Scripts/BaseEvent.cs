@@ -6,6 +6,9 @@ using UnityEngine.Events;
 /// This class inherits from Unity's ScriptableObject class and provides a generic implementation for
 /// raising events that can be used by derived classes. The generic type parameter T represents
 /// the type of data that is passed to the event handlers when the event is raised.
+///
+///
+/// Add this line on top after inheriting this class: [CreateAssetMenu(menuName = "Events/[name] Event")]
 /// </summary>
 /// <typeparam name="T">The type of data that is passed to the event handlers when the event is raised.</typeparam>
 
