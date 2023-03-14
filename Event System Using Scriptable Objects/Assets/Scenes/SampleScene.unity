@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventWithInt: {fileID: 11400000, guid: 5468ba1c2fe2fad4c8daa71e09db3939, type: 2}
-  _dictEvent: {fileID: 11400000, guid: a3b31b66a75fb314eb96f8f47aaf13ae, type: 2}
+  classEvent: {fileID: 11400000, guid: 7083a1dab763b05418626ddb7684b686, type: 2}
   messageBox: {fileID: 185841343}
 --- !u!114 &185841343
 MonoBehaviour:
@@ -809,6 +809,7 @@ GameObject:
   - component: {fileID: 1300699643}
   - component: {fileID: 1300699642}
   - component: {fileID: 1300699641}
+  - component: {fileID: 1300699644}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -866,6 +867,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1300699644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300699640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc63a60957d42df44af3dada9768b5ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1390818563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1346,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 293072339507487885, guid: 642916d4d7545274db2fab0177b1a517, type: 3}
+      propertyPath: ID
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2236895677011152868, guid: 642916d4d7545274db2fab0177b1a517, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1446,6 +1463,10 @@ PrefabInstance:
       propertyPath: collide
       value: 
       objectReference: {fileID: 11400000, guid: 8cf8c73b136af1545927189a2f28f8ba, type: 2}
+    - target: {fileID: 6410922698865331579, guid: ee5883cc6f29ff94cb5bee0710561b08, type: 3}
+      propertyPath: classEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 7083a1dab763b05418626ddb7684b686, type: 2}
     - target: {fileID: 6410922698865331579, guid: ee5883cc6f29ff94cb5bee0710561b08, type: 3}
       propertyPath: eDictEvent
       value: 

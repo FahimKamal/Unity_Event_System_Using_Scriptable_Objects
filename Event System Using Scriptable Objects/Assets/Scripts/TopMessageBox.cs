@@ -10,11 +10,11 @@ public class TopMessageBox : MonoBehaviour
 
     private void OnEnable()
     {
-        eventWithString.OnEventRaised += OnEventRaised;
+        eventWithString.onEventRaised.AddListener(OnEventRaised);
     }
     private void OnDisable()
     {
-        eventWithString.OnEventRaised -= OnEventRaised;
+        eventWithString.onEventRaised.AddListener(OnEventRaised);
     }
 
     private void OnEventRaised(string message)

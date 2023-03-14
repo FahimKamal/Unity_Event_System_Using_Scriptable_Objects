@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512b14a2bb03b3e478a2895d60e9ca5b, type: 3}
-  m_Name: New Dict Event
+  m_Script: {fileID: 11500000, guid: 3811dbf02716a9b4b9409c4ee8eda726, type: 3}
+  m_Name: New Custom Class Event
   m_EditorClassIdentifier: 

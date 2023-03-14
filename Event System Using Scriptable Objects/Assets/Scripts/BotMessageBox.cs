@@ -1,6 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.PackageManager;
+using Events_Scripts;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -8,15 +7,15 @@ using UnityEngine.UI;
 public class BotMessageBox : MonoBehaviour
 {
     [FormerlySerializedAs("EventWithInt")] [FormerlySerializedAs("intEvent")] [SerializeField] private IntEvent eventWithInt;
-    [SerializeField] private DictEvent _dictEvent;
+    [SerializeField] private CustomClassEvent classEvent;
     [SerializeField] private Text messageBox;
 
     private void OnEnable()
     {
-        eventWithInt.OnEventRaised += OnEventRaised;
-        if (_dictEvent != null)
+        eventWithInt.onEventRaised.AddListener(OnEventRaised); 
+        if (classEvent != null)
         {
-            _dictEvent.OnEventRaised += DamageTaken;
+            classEvent.onEventRaised.AddListener(DamageTaken);
         }
         else
         {
@@ -24,18 +23,18 @@ public class BotMessageBox : MonoBehaviour
         }
     }
 
-    private void DamageTaken(Dictionary<string, int> arg0)
+    private void DamageTaken(DataClass dataClass)
     {
-        messageBox.text += "\nDamage taken: " + arg0["Damage"];
+        messageBox.text += "\nDamage taken: " + dataClass.damage;
         StartCoroutine(ResetMessagebox());
     }
 
     private void OnDisable()
     {
-        eventWithInt.OnEventRaised -= OnEventRaised;
-        if (_dictEvent != null)
+        eventWithInt.onEventRaised.RemoveListener(OnEventRaised);
+        if (classEvent != null)
         {
-            _dictEvent.OnEventRaised -= DamageTaken;
+            classEvent.onEventRaised.RemoveListener(DamageTaken);
         }
         else
         {

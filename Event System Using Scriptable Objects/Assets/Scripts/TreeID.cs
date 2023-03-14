@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Events_Scripts;
 using UnityEngine;
 
 public class TreeID : MonoBehaviour
@@ -8,7 +9,6 @@ public class TreeID : MonoBehaviour
     [SerializeField] private Color skinColor;
 
     [SerializeField] private IntEvent _intEvent;
-    [SerializeField] private DictEvent dictEvent;
     
     [SerializeField]
     private List<SpriteRenderer> sp;

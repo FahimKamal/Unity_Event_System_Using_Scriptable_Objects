@@ -1,8 +1,10 @@
-
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Events/int Event")]
-public class IntEvent : BaseEvent<int>
+namespace Events_Scripts
 {
+    [CreateAssetMenu(menuName = "Events/int Event")]
+    public class IntEvent : BaseEvent<int>
+    {
     
+    }
 }

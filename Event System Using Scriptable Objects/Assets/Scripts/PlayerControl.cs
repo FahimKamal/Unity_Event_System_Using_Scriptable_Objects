@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Events_Scripts;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -10,7 +11,7 @@ public class PlayerControl : MonoBehaviour
 
     [FormerlySerializedAs("collide")] [SerializeField] private VoidEvent collideEvent;
     [SerializeField] private StringEvent collideEventWithString;
-    [SerializeField] private DictEvent eDictEvent;
+    [SerializeField] private CustomClassEvent classEvent;
     
     private Rigidbody2D _rb;
 
@@ -42,9 +43,9 @@ public class PlayerControl : MonoBehaviour
             collideEventWithString.RaiseEvent(col.gameObject.name);
         }
 
-        if (eDictEvent != null && col.gameObject.CompareTag("Enemy"))
+        if (classEvent != null && col.gameObject.CompareTag("Enemy"))
         {
-            eDictEvent.RaiseEvent(new Dictionary<string, int>(){ { "Damage", 20 } });
+            classEvent.RaiseEvent(new DataClass("Enemy", 26, 100, 20));
         }
     }
 }
