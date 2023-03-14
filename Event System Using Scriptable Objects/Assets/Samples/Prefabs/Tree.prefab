@@ -297,7 +297,6 @@ MonoBehaviour:
   ID: 0
   skinColor: {r: 0.09789959, g: 0.8301887, b: 0.15939835, a: 1}
   _intEvent: {fileID: 11400000, guid: 5468ba1c2fe2fad4c8daa71e09db3939, type: 2}
-  classEvent: {fileID: 0}
   sp:
   - {fileID: 7303063661197423896}
   - {fileID: 7303063660170406595}
