@@ -2,7 +2,7 @@ using EasyButtons;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Events_Scripts
+namespace Event_System_SO
 {
     /// <summary>
     /// A ScriptableObject-derived class that represents a void event. This class is used to create events

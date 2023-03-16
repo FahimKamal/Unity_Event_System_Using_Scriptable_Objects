@@ -1,5 +1,5 @@
 using System.Collections;
-using Events_Scripts;
+using Event_System_SO;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;

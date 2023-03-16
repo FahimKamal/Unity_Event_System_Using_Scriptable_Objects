@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Events_Scripts
+namespace Event_System_SO
 {
     [CreateAssetMenu(menuName = "Events/Custom Class Event")]
     public class CustomClassEvent : BaseEvent<DataClass>

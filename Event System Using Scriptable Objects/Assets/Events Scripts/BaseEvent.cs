@@ -2,7 +2,7 @@ using EasyButtons;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Events_Scripts
+namespace Event_System_SO
 {
     /// <summary>
     /// An abstract class for creating events that can be subscribed to and raised.
