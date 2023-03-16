@@ -15,6 +15,10 @@
     "email": "fahimkamal63@gmail.com",
     "url": "https://github.com/FahimKamal"
   },
+  "files": [
+    "Events Scripts",
+    "Samples"
+  ],
   "samples": [
     {
       "displayName": "Event System Example",
