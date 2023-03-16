@@ -18,7 +18,7 @@
   "samples": [
     {
       "displayName": "Event System Example",
-      "path": "Samples/Event System SO"
+      "path": "Samples/"
     }
   ],
   "unity": "2021.3"
